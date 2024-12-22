@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Database Choice</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+        <div class="head">
+            <div class="links linknav">
+                <a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="https://www.google.com/" class="fa fa-google"></a>
+                <div class="linebreak"><br></div>
+				<a href="https://www.linkedin.com/in/asher-sajid-b99b31329/" class="fa fa-linkedin"></a>
+				<a href="https://www.youtube.com/@Mass-2024-Neduet" class="fa fa-youtube"></a>
+            </div>
+            <a href="#" class="maintitle">BLOGGING WEBSITE</a>
+            <div class="restlinks"></div>
+        </div>
+
+        <div class="hnavbar">
+            <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/" class="navbtns">Home</a>
+            <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/#blog" class="navbtns">Blogs</a>
+            <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/#about" class="navbtns">About</a>
+            <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/contact/contact.html" class="navbtns">Contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Options</button>
+            <div class="dropdown-menu">
+                <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/">Home</a>
+                <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/#blog">Blogs</a>
+                <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/#about">About</a>
+                <a href="https://muhammad-asher-sajid-sheikh.github.io/blogging-website/contact/contact.html">Contact</a>
+                <div class="dplinks">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="https://www.google.com/" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/in/asher-sajid-b99b31329/" class="fa fa-linkedin"></a>
+                    <a href="https://www.youtube.com/@Mass-2024-Neduet" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown() {
+                const dropdownMenu = document.querySelector('.dropdown-menu');
+                dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+            }
+        </script>
+
+        <div class="mainimage">
+            <img src="images/6.jpeg" alt="main image">
+        </div>
+
+		<div class="heading">
+            PostgreSQL vs. Other Databases: Which Should You Choose?
+        </div>
+		
+		<div class="contents">
+
+			<img src="images/bg6/1.jpeg" alt="Summer House" class="picsl">
+
+			<p class="desc">Choosing the right database is a crucial decision in any software development project. The database serves as the backbone of an application, storing and managing data that drives the entire system. Whether it’s a small personal project or a large-scale enterprise application, selecting an appropriate database can have a significant impact on performance, scalability, and maintainability. There are two main categories of databases: relational databases (SQL) and non-relational databases (NoSQL). Each type has its own strengths, and the decision of which to use depends on the nature of the application, the structure of the data, and the specific requirements of the project.
+			</p>
+
+			<img src="images/bg6/2.jpeg" alt="Summer House" class="picsr">
+
+			<p class="desc">Relational databases, such as MySQL, PostgreSQL, and Microsoft SQL Server, are based on a structured query language (SQL) and are ideal for applications with well-defined schemas and complex relationships between data. These databases store data in tables with rows and columns, using keys to establish relationships between different tables. SQL databases are particularly well-suited for applications that require ACID (Atomicity, Consistency, Isolation, Durability) compliance, such as financial systems, where data integrity is critical. They offer powerful querying capabilities and are generally more suitable for applications with structured, predictable data that can be organized into tables.
+			</p>
+
+			<img src="images/bg6/3.jpeg" alt="Summer House" class="picsl">
+
+			<p class="desc">On the other hand, non-relational (NoSQL) databases like MongoDB, Cassandra, and CouchDB are designed to handle unstructured or semi-structured data. These databases do not use SQL and typically store data in formats such as key-value pairs, document stores, or graphs. NoSQL databases are highly scalable, offering flexibility in handling large volumes of varied data types, such as JSON, XML, or even binary data. They are ideal for applications that require horizontal scalability, real-time processing, or handling big data, such as social media platforms, real-time analytics, and IoT systems. NoSQL databases also allow for more dynamic schema design, making them a better fit for projects with evolving or unknown data structures.
+			</p>
+
+			<img src="images/bg6/4.jpeg" alt="Summer House" class="picsr">
+
+			<p class="desc">The decision between SQL and NoSQL ultimately depends on the specific needs of the application. SQL databases are generally preferred when data consistency, structure, and relational integrity are top priorities, while NoSQL databases are better for handling unstructured data, high scalability, and flexibility in design. Additionally, hybrid approaches are becoming increasingly common, where both SQL and NoSQL databases are used within the same application to meet different needs. For example, a financial application might use a relational database to store transactional data while utilizing a NoSQL database for user-generated content like comments or media. It is also important to consider factors such as ease of use, community support, and integration capabilities with other systems when selecting a database. The right choice will not only ensure the application runs efficiently but will also enable smooth scalability as the project grows. As technologies evolve and new database solutions emerge, developers need to stay informed about the latest trends and best practices to make an informed decision that aligns with their project goals.
+            </p>
+
+		</div>
+
+
+        <div class="footer">
+			<div class="fdesc">
+				<span><b>PREPARED BY</b> <br> Muhammad Asher Sajid Sheikh</span><br><br>
+				This is a demo website for showcasing what I have learnt so far.
+			</div>
+		</div>
+    </body>
+</html>
