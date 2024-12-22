@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Home Page</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+        <div class="head">
+            <div class="links linknav">
+                <a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="https://www.google.com/" class="fa fa-google"></a>
+                <div class="linebreak"><br></div>
+				<a href="https://www.linkedin.com/in/asher-sajid-b99b31329/" class="fa fa-linkedin"></a>
+				<a href="https://www.youtube.com/@Mass-2024-Neduet" class="fa fa-youtube"></a>
+            </div>
+            <a href="#" class="maintitle">BLOGGING WEBSITE</a>
+            <div class="restlinks"></div>
+        </div>
+
+        <div class="hnavbar">
+            <a href="#" class="navbtns">Home</a>
+            <a href="#blog" class="navbtns">Blogs</a>
+            <a href="#about" class="navbtns">About</a>
+            <a href="contact/contact.html" class="navbtns">Contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Options</button>
+            <div class="dropdown-menu">
+                <a href="#">Home</a>
+                <a href="#nlog">Blogs</a>
+                <a href="#about">About</a>
+                <a href="contact/contact.html">Contact</a>
+                <div class="dplinks">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="https://www.google.com/" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/in/asher-sajid-b99b31329/" class="fa fa-linkedin"></a>
+                    <a href="https://www.youtube.com/@Mass-2024-Neduet" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown() {
+                const dropdownMenu = document.querySelector('.dropdown-menu');
+                dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+            }
+        </script>
+        
+        <div class="topgallery">
+            <a href="Blogs/blog01.html" class="largephoto">
+                <div class="largeimg">
+                    <img src="images/1.jpeg" alt="Brick House" >
+                </div>
+                <div class="imagetitle">
+                    JavaScript Impact
+                    <div class="innertxt">
+                        Explore JavaScript's role in creating dynamic and interactive web applications. Discuss frameworks like React.js, Node.js, and their real-world applications. Share tips for mastering JavaScript for beginners and professionals. Highlight its versatility for frontend and backend development. End with future trends in JavaScript.
+                    </div>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog02.html" class="smallphoto">
+                <div class="smallimg">
+                    <img src="images/2.jpeg" alt="Brick House" >
+                </div>
+                <div class="smallimagetitle">
+                    Career Tips
+                    <div class="smallinnertxt">
+                        Guide aspiring developers on the essential skills needed to break into the tech industry. Include tips on choosing the right programming languages, building projects, and using GitHub effectively. Discuss the importance of certifications and internships. Share insights into networking and finding mentors. Encourage a continuous learning mindset.
+                    </div>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog03.html" class="smallphoto">
+                <div class="smallimg">
+                    <img src="images/3.jpeg" alt="Brick House" >
+                </div>
+                <div class="smallimagetitle">
+                    AI Basics
+                    <div class="smallinnertxt">
+                        Introduce readers to AI, its concepts, and real-world applications. Discuss the differences between machine learning, deep learning, and neural networks. Share examples of AI in industries like healthcare, finance, and education. Provide tips on starting a career in AI. Highlight ethical considerations in AI development.
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div id="blog" class="gallery">
+            <a href="Blogs/blog01.html" class="card">
+                <img src="images/1.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">JavaScript Impact</div>
+                    <div class="carddesc">
+                        Explore JavaScript's role in creating dynamic and interactive web applications. Discuss frameworks like React.js, Node.js, and their real-world applications. Share tips for mastering JavaScript for beginners and professionals. Highlight its versatility for frontend and backend development. End with future trends in JavaScript.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+
+            <a href="Blogs/blog02.html" class="card">
+                <img src="images/2.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">Career Tips</div>
+                    <div class="carddesc">
+                        Guide aspiring developers on the essential skills needed to break into the tech industry. Include tips on choosing the right programming languages, building projects, and using GitHub effectively. Discuss the importance of certifications and internships. Share insights into networking and finding mentors. Encourage a continuous learning mindset.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog03.html" class="card">
+                <img src="images/3.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">AI Basics</div>
+                    <div class="carddesc">
+                        Introduce readers to AI, its concepts, and real-world applications. Discuss the differences between machine learning, deep learning, and neural networks. Share examples of AI in industries like healthcare, finance, and education. Provide tips on starting a career in AI. Highlight ethical considerations in AI development.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog04.html" class="card">
+                <img src="images/4.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">Version Control</div>
+                    <div class="carddesc">
+                        Explain why tools like Git and GitHub are essential for teamwork in software development. Share best practices for version control, including branching, merging, and resolving conflicts. Highlight its use in tracking changes and maintaining project integrity. Discuss the role of Git in open-source projects. Offer resources for beginners.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog05.html" class="card">
+                <img src="images/5.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">Full-Stack</div>
+                    <div class="carddesc">
+                        Detail the journey to becoming a full-stack developer, covering both frontend and backend skills. Discuss the importance of mastering HTML, CSS, JavaScript, Python, and frameworks like Django and React. Share tips for building full-stack projects. Highlight the demand for full-stack developers in the industry. Provide resources for advanced learning.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog06.html" class="card">
+                <img src="images/6.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">Database Choice</div>
+                    <div class="carddesc">
+                        Compare PostgreSQL with popular databases like MySQL, MongoDB, and SQLite. Discuss the strengths and weaknesses of each, focusing on performance, scalability, and use cases. Provide tips for selecting the right database for specific projects. Highlight PostgreSQL’s advanced features. Offer resources for mastering it.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog07.html" class="card">
+                <img src="images/7.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">AWS Role</div>
+                    <div class="carddesc">
+                        Discuss why AWS is a leading platform for cloud services. Highlight its core offerings, such as EC2, S3, and Lambda. Share examples of how AWS is used in real-world applications. Provide a roadmap for beginners to learn AWS and get certified. Discuss the importance of cloud computing in today’s tech landscape.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+            
+            <a href="Blogs/blog08.html" class="card">
+                <img src="images/8.jpeg" alt="image">
+                <div class="txt">
+                    <div class="cardtitle">React Native</div>
+                    <div class="carddesc">
+                        Dive into the features and benefits of React Native for mobile development. Explain how it allows developers to create cross-platform apps efficiently. Share tips for designing user-friendly interfaces. Highlight real-world examples of apps built with React Native. Offer a roadmap for beginners to learn and start building.
+                    </div>
+                    <p class="cardbtn">Read More</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="about">
+            <div class="abhead"><b>About Us</b></div><br>
+            <div class="abcontent">
+                Welcome to our platform, where innovation meets creativity! We are a team of passionate creators, developers, and tech enthusiasts dedicated to empowering individuals and businesses through cutting-edge technology solutions. Whether it’s full-stack web development, cloud computing, mobile app creation, or database management, our expertise lies in turning complex ideas into tangible results.
+                <br><br>
+                Our mission is to inspire learning, foster growth, and deliver excellence in everything we do. We believe in the power of technology to shape the future and are committed to sharing knowledge, resources, and tools that help others succeed in their journeys.
+                <br><br>
+                Through our blogs, projects, and services, we aim to provide a hub for learning, exploration, and collaboration. We take pride in staying at the forefront of emerging technologies while maintaining a focus on practical, real-world applications.
+                <br><br>
+                Join us as we build a community driven by innovation, creativity, and a shared passion for shaping tomorrow’s world. Let’s create, learn, and grow together!
+            </div>
+        </div>
+
+        <div class="footer">
+			<div class="fdesc">
+				<span><b>PREPARED BY</b> <br> Muhammad Asher Sajid Sheikh</span><br><br>
+				This is a demo website for showcasing what I have learnt so far.
+			</div>
+		</div>
+    </body>
+</html>
